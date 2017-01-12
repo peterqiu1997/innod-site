@@ -1,10 +1,19 @@
 html, body { padding: 0; margin: 0; box-sizing: border-box; font-family: 'Raleway', sans-serif; }
 
+@keyframes blink {
+  50% { border-right: 0.08em solid white}
+}
+
 .content {
   width: 100vw;
+
   .typewrite {
     color: #0693C0;
     text-decoration: none;
+
+    .wrap {
+      animation: blink 1.5s linear infinite;
+    }
   }
 
   .header {
