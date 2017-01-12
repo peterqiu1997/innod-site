@@ -22,6 +22,8 @@ class App extends React.Component {
           <br></br><br></br>
           As Ariel puts it, "WEBMAMA WE LOVE U💖💖💖 u r AMAZING and we appreciate u so much☺️☺️ ty 
           for being awesome💕💕💕🐟🌊."
+          <br></br><br></br>
+          John would like to add, "you know what the best kind of ship is...friendship. ily web mom 💖💖💖"
         </div>
         <Footer/>
       </div>
