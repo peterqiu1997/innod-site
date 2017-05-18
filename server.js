@@ -10,4 +10,4 @@ const server = app.listen(port)
 
 // middleware
 app.use(compression());
-app.use(express.static(process.env.PWD + '/build'));
+app.use(express.static(process.env.PWD + '/public'));
