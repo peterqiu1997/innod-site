@@ -22,7 +22,7 @@ module.exports = {
         loaders: ['style', 'css', 'sass']
       },
       { test: /\.(png|jpg)$/, 
-        loader: 'url-loader?limit=8192' 
+        loader: 'url-loader?limit=8192&name=images/[name].[ext]' 
       }
     ]
   },
