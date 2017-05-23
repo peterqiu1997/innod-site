@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Panel from './components/Panel.js';
+import Headroom from 'react-headroom';
 
 require('./style/base.scss');
+
+const navbarHeight = 54;
 
 class App extends React.Component {
   constructor(props) {
@@ -11,16 +13,35 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="content">
-        <Panel imgName="img1.jpg" />
-        <Panel imgName="img2.jpg" />
-        <Panel imgName="img3.jpg" />
-        <Panel imgName="img1.jpg" />
-        <Panel imgName="img2.jpg" />
-        <Panel imgName="img3.jpg" />
-        <Panel imgName="img1.jpg" />
-        <Panel imgName="img2.jpg" />
-        <Panel imgName="img3.jpg" />
+      <div>
+        <Headroom
+          wrapperStyle={{
+            maxHeight: navbarHeight 
+          }}
+        >
+        <div className="navbar">
+          THIS IS THE NAVBAR
+        </div>
+        </Headroom>
+        <div className="content">
+          <div className="content__intro">
+            Content Intro
+          </div>
+          <div className="grid">
+            <div className="grid-sizer"></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+            <div className="grid-item"><img src="/images/img1.jpg" /></div>
+          </div>
+        </div>
       </div>
     )
   }

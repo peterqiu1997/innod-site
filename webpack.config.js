@@ -7,6 +7,13 @@ module.exports = {
   devtool: debug ? "inline-sourcemap" : null,
   entry: "./index.js",
   module: {
+    /*preLoaders: [ # ESLint 
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'eslint-loader',
+      }
+    ],*/
     loaders: [
       {
         test: /\.jsx?$/,
