@@ -2,14 +2,10 @@
 
 .content {
   width: 100%;  
-  
-  .content__intro {
-    width: 90%;
-    height: 100px;
-  }
 
   .grid {
     background: #CCC;
+    margin: 0 auto;
   }
 
   /* clearfix */
@@ -24,6 +20,7 @@
   .grid-sizer,
   .grid-item {
     width: 33.333%;
+    margin: 0;
     
     img {
       display: block;
@@ -32,6 +29,20 @@
     
     @media (max-width: 500px) {
       width: 100%;
+    }
+  }
+  
+  /* ---- introductory grid-item ---- */
+  .intro {
+    width: 66.666%;
+    padding: 25px;
+    font-size: 25px;
+    color: #90A4AE;
+    background-color: white;
+
+    span {
+      color: #0693C0;
+      font-size: 48px;
     }
   }
 }
