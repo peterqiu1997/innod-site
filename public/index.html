@@ -10,24 +10,5 @@
     <div id='root'>
     </div>
   </body>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="./index.min.js" defer></script>
-  <script defer>
-    $(document).ready(function() {
-      var $grid = $('.grid').imagesLoaded( function() {
-        // init Masonry after all images have loaded
-        $grid.masonry({
-          // options...
-          itemSelector: '.grid-item',
-          columnWidth: '.grid-sizer',
-          percentPosition: true
-        });
-      });
-    });
-  </script>
 </html>
