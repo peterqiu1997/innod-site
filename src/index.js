@@ -97,7 +97,7 @@ class App extends React.Component {
           <Masonry options={options} updateOnEachImageLoad={true}>
             <div className="grid-sizer"></div>
             <div className="grid-item intro">
-              <span>Innovative Design</span> is a family of graphic and web designers, photographers, and videographers at the University of California, Berkeley. 
+              <span><b>Innovative Design</b></span> is a family of graphic and web designers, photographers, and videographers at the University of California, Berkeley. 
               <br />
               <br />
               We are creative individuals who are continuously evolving by collaborating, inspiring and educating one another.
